@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://uilight.netlify.app/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+</head>
+<body>
+    <header class="heading d-flex grow-shrink-basis align-center">
+        <div class="heading-title-icon d-flex grow-shrink-basis align-center">
+            <img class="icon mr-1" src="https://uilight.netlify.app/assets/image.png" alt="lightbulb">
+            <h1 class="heading-title">
+                <a class="link" href="/">Shopify</a>
+            </h1>
+        </div>
+        <div class="search-box-container relative">
+            <input class="search-box-input" placeholder="Search Products">
+            <span class="material-symbols-outlined absolute top-0 left-0">search</span>
+        </div>
+        <nav class="navigation d-flex align-center">
+            <ul class="list-non-bullet d-flex align-center gap">
+                <li class="list-item-inline">
+                    <a href="#" class="link cursor">
+                        <span class="nav-icon material-symbols-outlined">favorite</span>
+                    </a>
+                </li>
+                <li class="list-item-inline">
+                    <a href="cart.html" class="link cursor">
+                        <span class="nav-icon material-symbols-outlined">
+                            <img src="./shopping-cart.png" alt="add to cart" style="width: 24px;height: 24px;">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="products-page d-flex wrap gap" id="products"></div>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
